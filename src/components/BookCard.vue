@@ -5,11 +5,13 @@
                 class="book_card mx-auto my-4"
                 to=""
         >
-            <v-img
-                    lazy-src="https://cdn.vuetifyjs.com/images/cards/store.jpg"
-                    src="https://cdn.vuetifyjs.com/images/cards/store.jpg"
-                    height="200"
-            >
+                <v-img
+                        :lazy-src="require('../assets/book1.png')"
+                        :src="require('../assets/book1.png')"
+                        class="my-3"
+                        contain
+                        height="200"
+                />
                 <template v-slot:placeholder>
                     <v-row
                             class="fill-height ma-0"
