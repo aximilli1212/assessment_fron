@@ -36,9 +36,6 @@
           </v-row>
         </section>
 
-
-
-
       </v-container>
     </v-flex>
   </v-layout>
@@ -60,7 +57,7 @@
     },
     mounted () {
       axios
-              .get(`${process.env.VUE_APP_HOST_URL}/books`)
+              .get('http://doc2.vag/api/books')
               .then(response => {
                 console.log({books: response.data.data});
                 this.bookList = response.data.data;
